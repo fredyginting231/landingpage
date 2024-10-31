@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Scrollspy Accordion Demo</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/icon/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            position: relative; /* Required for scrollspy */
+        }
+        .section {
+            height: 500px; /* Adjust height for demo */
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0" tabindex="0">
+    
+    <nav id="navbar-example" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#item1">Accordion Item #1</a>
+        <a class="navbar-brand" href="#item2">Accordion Item #2</a>
+        <a class="navbar-brand" href="#item3">Accordion Item #3</a>
+    </nav>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" id="item1">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" id="item2">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" id="item3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Add sections for scrollspy -->
+    <div class="section" id="item1-content">Content for Item 1</div>
+    <div class="section" id="item2-content">Content for Item 2</div>
+    <div class="section" id="item3-content">Content for Item 3</div>
+
+</body>
+</html>

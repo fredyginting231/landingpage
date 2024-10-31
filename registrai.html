@@ -1,0 +1,145 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 p-8">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded shadow">
+   <h2 class="text-teal-700 text-xl font-semibold mb-4">
+    Data Asal Sekolah
+   </h2>
+   <div class="mb-6">
+    <label class="block text-gray-700 mb-2">
+     Nama Sekolah
+     <span class="text-red-500">
+      *
+     </span>
+    </label>
+    <div class="flex items-center bg-gray-100 p-4 rounded">
+     <img src="assets/logo.jpg" class="w-12 h-12 mr-4" height="50" width="50"/>
+     <div>
+      <div class="text-teal-700 font-semibold">
+       SDN 105401 namolinting
+      </div>
+      <div class="text-gray-600 text-sm">
+       KUTA MBELIN, STM HULU,DELISERDANG,SUMATRA UTARA
+      </div>
+     </div>
+    </div>
+   </div>
+   <h2 class="text-teal-700 text-xl font-semibold mb-4">
+    Biodata Siswa
+   </h2>
+   <div class="mb-6">
+    <label class="block text-gray-700 mb-2">
+     Nama Lengkap
+    </label>
+    <input class= "flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded" type="text" value="ANGGITA FEBRIANA PUTRI"/>
+   </div>
+   <div class="mb-6 flex">
+    <div class="w-1/2 mr-4">
+     <label class="block text-gray-700 mb-2">
+      Jenis Kelamin
+     </label>
+     <div class="flex items-center">
+      <input class="mr-2" id="laki-laki" name="gender" type="radio"/>
+      <label class="mr-4" for="laki-laki">
+       Laki-laki
+      </label>
+      <input checked="" class="mr-2" id="perempuan" name="gender" type="radio"/>
+      <label for="perempuan">
+       Perempuan
+      </label>
+     </div>
+    </div>
+    <div class="w-1/2">
+     <label class="block text-gray-700 mb-2">
+      NISN
+     </label>
+     <input class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded" type="text" value="0001450164"/>
+    </div>
+   </div>
+   <div class="mb-6 flex">
+    <div class="w-1/2 mr-4">
+     <label class="block text-gray-700 mb-2">
+      Tempat Lahir
+     </label>
+     <input class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded" type="text" value="Indonesia"/>
+    </div>
+    <div class="w-1/2">
+     <label class="block text-gray-700 mb-2">
+      Tanggal Lahir
+     </label>
+     <div class="flex items-center">
+      <input class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded" type="text" value="28 Februari 2007"/>
+      <button class="ml-2 text-gray-500">
+       <i class="fas fa-calendar-alt">
+       </i>
+      </button>
+      <button class="ml-2 text-gray-500">
+       <i class="fas fa-times">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <h2 class="text-teal-700 text-xl font-semibold mb-4">
+    Alamat Siswa
+   </h2>
+   <div class="mb-6">
+    <label class="block text-gray-700 mb-2">
+     Alamat Siswa
+     <span class="text-red-500">
+      *
+     </span>
+    </label>
+    <textarea class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded">Jl. Jambu Kluthuk</textarea>
+   </div>
+   <div class="mb-6 flex">
+    <div class="w-1/2 mr-4">
+     <label class="block text-gray-700 mb-2">
+      Provinsi
+      <span class="text-red-500">
+       *
+      </span>
+     </label>
+     <select class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded">
+      <option>
+       SUMATRA UTARA
+      </option>
+     </select>
+    </div>
+    <div class="w-1/2">
+     <label class="block text-gray-700 mb-2">
+      Kota / Kabupaten
+      <span class="text-red-500"
+       *
+      </span>
+     </label>
+     <select class=" flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded">
+      <option>
+       DELI SERDANG
+      </option>
+     </select>
+    </div>
+   </div>
+   <div class="mb-6 flex">
+    <div class="w-1/2 mr-4">
+     <label class="block text-gray-700 mb-2">
+      Kecamatan
+     </label>
+     <input class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded" type="text" value="Belimbing"/>
+    </div>
+    <div class="w-1/2">
+     <label class="block text-gray-700 mb-2">
+      Kelurahan
+      <span class="text-red-500">
+      </span>
+     </label>
+     <input class="flex items-center bg-gray-100 p-4 rounded w-full p-2 border rounded" type="text" value="Arjosari"/>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
